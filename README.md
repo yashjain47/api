@@ -1,3 +1,2 @@
-# API Development 
-# API Automation 
-# API Integration 
+# APIs 
+The Repo Consists of API Development, Automation and Integration. 
