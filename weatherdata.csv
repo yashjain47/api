@@ -1,0 +1,4 @@
+city,apikey,country,id,url
+London,bc00901cd13494a8060cd1bc73917b45,uk,2172797,api.openweathermap.org
+Delhi,bc00901cd13494a8060cd1bc73917b45,in,2172797,api.openweathermap.org
+Hyderabad,bc00901cd13494a8060cd1bc73917b45,in,2172797,api.openweathermap.org
