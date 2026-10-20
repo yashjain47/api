@@ -1,2 +1,2 @@
-# api_Automation_robust
-This Repo is consist of Python based API Automation Robust Framework.
+# Api_Automation_robust
+Python-based API Automation Robust Framework.
