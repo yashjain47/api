@@ -1,0 +1,50 @@
+"""
+FastAPI
+"""
+
+
+
+>>  Advantages:
+
+1.  Fast 
+2.  Supports Microservices.
+3.  Data Validation and Data fastening.  
+4.  Easy to learn.
+5.  Asynchronous Programming. (handles multiple requests)
+
+
+
+
+
+
+HTTP Methods (CRUD):
+
+        CLIENT          >>>>>>          SERVER
+
+Get     --  To get some data from the server.
+Post    --  To Add some data in the server.
+Put     --  To Update some data in the server. 
+Delete  --  To delete some data from the server.
+Patch   --  To update a particular field from a data in the server.
+
+
+
+ 
+
+::::::::::::::::::::: FOLDER STRUCTURE :::::::::::::::::::::
+
+
+1.  .env File   
+2.  Virtual Environment python -m venv env
+
+3.  SRC (source Folder)     >>  utils, tasks, user account
+4.  main.py
+
+
+dtos (data transfer objects)
+
+
+
+user    >>  controllers.py, models.py, router.py, dtos.py
+
+tasks   >>   .py

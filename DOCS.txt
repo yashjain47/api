@@ -1,0 +1,150 @@
+pip install virtualenv
+
+virtualenv -p python3 myvenv
+source myvenv/bin/activate
+
+
+----------------- FOR unicorn server -----------------
+
+uvicorn <filename>:<appname>
+eg. uvicorn main:app --reload
+
+
+FastAPI doesnt contain any built-in development server. Hence we need Uvicorn. It implements ASGI standards and is lightning fast. ASGI stands for Asynchronous Server Gateway Interface.
+
+The WSGI (Web Server Gateway Interface the older standard) compliant web servers are not suitable for asyncio applications. Python web frameworks (such as FastAPI) implementing ASGI specifications provide high speed performance, comparable to web apps built with Node and Go.
+
+Uvicorn uses uvloop and httptools libraries. It also provides support for HTTP/2 and WebSockets, which cannot be handled by WSGI. uvloop id similar to the built-in asyncio event loop. httptools library handles the http protocols.
+
+The installation of Uvicorn as described earlier will install it with minimal dependencies. However, standard installation will also install cython based dependencies along with other additional libraries.
+
+
+Sr.No	Command & Description
+1	
+--host TEXT
+
+Bind socket to this host. [default 127.0.0.1]
+
+2	
+--port INTEGER
+
+Bind socket to this port. [default 8000]
+
+3	
+--uds TEXT
+
+Bind to a UNIX domain socket.
+
+4	
+--fd INTEGER
+
+Bind to socket from this file descriptor.
+
+5	
+--reload
+
+Enable auto-reload.
+
+6	
+--reload-dir PATH
+
+Set reload directories explicitly, default current working directory.
+
+7	
+--reload-include TEXT
+
+Include files while watching. Includes '*.py' by default
+
+8	
+-reload-exclude TEXT
+
+Exclude while watching for files.
+
+9	
+--reload-delay FLOAT
+
+Delay between previous and next check default 0.25
+
+10	
+-loop [auto|asyncio|uvloop]
+
+Event loop implementation. [default auto]
+
+11	
+--http [auto|h11|httptools]
+
+HTTP protocol implementation. [default auto]
+
+12	
+--interface auto|asgi|asgi|wsgi
+
+Select application interface. [default auto]
+
+13	
+--env-file PATH
+
+Environment configuration file.
+
+14	
+--log-config PATH
+
+Logging configuration file. Supported formats .ini, .json, .yaml.
+
+15	
+--version
+
+Display the uvicorn version and exit.
+
+16	
+--app-dir TEXT
+
+Look for APP in the specified directory default current directory
+
+17	
+--help
+
+Show this message and exit.
+
+
+
+
+------------------------------------------------------------
+
+RElational State Transfer (REST) is a software architectural style. REST defines how the architecture of a web application should behave. It is a resource based architecture where everything that the REST server hosts, (a file, an image, or a row in a table of a database), is a resource, having many representations.
+
+REST recommends certain architectural constraints.
+
+Uniform interface
+
+Statelessness
+
+Client-server
+
+Cacheability
+
+Layered system
+
+Code on demand
+
+REST constraints has the following advantages −
+
+Scalability
+
+Simplicity
+
+Modifiability
+
+Reliability
+
+Portability
+
+Visibility
+
+REST uses HTTP verbs or methods for the operation on the resources. The POST, GET, PUT and DELETE methods perform respectively CREATE, READ, UPDATE and DELETE operations respectively.
+
+
+The async keyword in the functions definition tells FastAPI that it is to be run asynchronously i.e. without blocking the current thread of execution. However, a path operation function can be defined without the async prefix also.
+
+This decorated function returns a JSON response. Although it can return almost any of Pythons objects, it will be automatically converted to JSON. Further in this tutorial, we shall see how such a function returns Pydantic model objects.
+
+The URLs endpoint or path can have one or more variable parameters. They can be accepted by using Pythons string formatting notation. In the above example URL http://localhost:8000/hello/TutorialsPoint, the last value may change in every client request. This variable parameter can be accepted in a variable as defined in the path and passed to the formal parameters defined in the function bound to the operation decorator.
