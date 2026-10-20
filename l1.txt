@@ -1,0 +1,35 @@
+-------------------- API --------------------
+
+Application Program Interface
+Client Server Architecture
+Allows apps to make use of resources.
+
+Types:
+
+SOAP    
+RPC
+Websocket
+REST
+
+
+"For Virtual ENV"
+python3 -m venv virtualenv
+source /virtualenv/bin/activate
+
+
+cmd: flask run --debug
+
+import functions from other folder  like from Controller import * 
+--> create a __init__.py file and add __all__=['product_controller','user_controller']
+
+
+
+CRUD:
+create
+read
+update
+delete
+
+
+users login and ready for access --> authentication
+access the content --> authorization
