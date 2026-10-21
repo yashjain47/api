@@ -1,0 +1,22 @@
+line 4 column 5 - Warning: <meta> lacks "content" attribute
+line 14 column 5 - Warning: <link> lacks "type" attribute
+line 17 column 5 - Warning: <script> lacks "type" attribute
+line 22 column 9 - Error: <nav> is not recognized!
+line 22 column 9 - Warning: discarding unexpected <nav>
+line 27 column 21 - Warning: unknown attribute "data-target"
+line 27 column 21 - Warning: unknown attribute "data-toggle"
+line 29 column 44 - Warning: trimming empty <span>
+line 30 column 44 - Warning: trimming empty <span>
+line 31 column 44 - Warning: trimming empty <span>
+line 44 column 19 - Warning: missing <li>
+line 54 column 5 - Warning: discarding unexpected </nav>
+line 62 column 21 - Warning: unknown attribute "role"
+line 69 column 33 - Warning: unknown attribute "autofocus"
+line 69 column 33 - Warning: unknown attribute "required"
+line 78 column 33 - Warning: unknown attribute "required"
+line 113 column 5 - Warning: <script> lacks "type" attribute
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+16 warnings, 1 error were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.
